@@ -1,9 +1,7 @@
 
-<img src=https://github.com/FinchFeng/MyPlanList/blob/master/ChartTest/support/Assets.xcassets/AppIcon.appiconset/Icon-180.png width="120" height="120" alt="图片加载失败时，显示这段字"/>
 
+# 计划表   MyPlanList 
 
-# 计划表 1.2
-## MyPlanList
 
 [![appStore](https://github.com/FinchFeng/MyPlanList/blob/master/Download_on_the_App_Store_Badge_CN_135x40.png)](https://itunes.apple.com/cn/app/计划单/id1341198801?mt=8)
 
