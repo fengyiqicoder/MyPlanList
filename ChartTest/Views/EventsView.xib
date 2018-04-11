@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventsView" customModule="ChartTest" customModuleProvider="target">
+            <connections>
+                <outlet property="addDescriptionButton" destination="WqI-tC-TDZ" id="OMS-QT-L2m"/>
+                <outlet property="alarmButton" destination="QUh-tD-yda" id="lkO-Oe-dzq"/>
+                <outlet property="lamp" destination="mRR-sE-MLf" id="1CY-0v-DGN"/>
+                <outlet property="lampImageView" destination="szv-94-IpM" id="qUc-GU-Mib"/>
+                <outlet property="nameLabel" destination="3Et-RQ-yRj" id="CB4-QE-Ymq"/>
+                <outlet property="timeLabel" destination="P6a-Pd-9YF" id="m7I-rG-D5Z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="时间" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P6a-Pd-9YF" customClass="TimeTextField" customModule="ChartTest" customModuleProvider="target">
+                    <rect key="frame" x="59" y="0.0" width="60" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="qDf-6v-kA3"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="事件名" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Et-RQ-yRj" customClass="NameTextField" customModule="ChartTest" customModuleProvider="target">
+                    <rect key="frame" x="59" y="35" width="88" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="asi-bD-NKe"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uE-jF-6rL">
+                    <rect key="frame" x="0.0" y="0.0" width="22.5" height="110"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2p-dt-seT">
+                    <rect key="frame" x="38.5" y="0.0" width="20.5" height="110"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqI-tC-TDZ">
+                    <rect key="frame" x="55" y="68" width="345" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="Eb4-Nv-ZjS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                    <connections>
+                        <action selector="pressedDescriptionCreateButton" destination="-1" eventType="touchUpInside" id="kXa-Aq-mnj"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUh-tD-yda">
+                    <rect key="frame" x="128" y="8.5" width="26" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QUh-tD-yda" secondAttribute="height" multiplier="4:3" id="anz-1v-FGd"/>
+                        <constraint firstAttribute="width" constant="26" id="fQ9-Kh-J0k"/>
+                    </constraints>
+                    <state key="normal" image="alarmIcon"/>
+                    <state key="highlighted" image="alarmIcon"/>
+                    <connections>
+                        <action selector="changeNotificaitonStatus" destination="-1" eventType="touchUpInside" id="49u-RF-NQn"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowLamp" translatesAutoresizingMaskIntoConstraints="NO" id="szv-94-IpM">
+                    <rect key="frame" x="22" y="9" width="16" height="8"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="haj-vb-eki"/>
+                        <constraint firstAttribute="width" constant="16" id="nPH-gW-WyJ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRR-sE-MLf">
+                    <rect key="frame" x="14" y="0.0" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="b7c-j3-ETK"/>
+                        <constraint firstAttribute="height" constant="33" id="rHm-w5-hKk"/>
+                    </constraints>
+                    <connections>
+                        <action selector="changeNotificaitonStatus" destination="-1" eventType="touchUpInside" id="8kg-Vm-oVI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="mRR-sE-MLf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="02z-bz-jAe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WqI-tC-TDZ" secondAttribute="trailing" constant="14" id="0Yy-Ui-MVh"/>
+                <constraint firstItem="V2p-dt-seT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2Qp-IM-sOF"/>
+                <constraint firstItem="WqI-tC-TDZ" firstAttribute="top" secondItem="3Et-RQ-yRj" secondAttribute="bottom" id="35v-QG-ahv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="3uE-jF-6rL" secondAttribute="leading" id="5Cg-fp-3Zp"/>
+                <constraint firstItem="P6a-Pd-9YF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="9qh-ms-cgO"/>
+                <constraint firstItem="3uE-jF-6rL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="CDI-CE-Aat"/>
+                <constraint firstItem="3uE-jF-6rL" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.054" id="FZC-fy-dto"/>
+                <constraint firstItem="szv-94-IpM" firstAttribute="leading" secondItem="3uE-jF-6rL" secondAttribute="trailing" id="HkG-q6-jpC"/>
+                <constraint firstItem="szv-94-IpM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="9" id="JiY-3n-3Ig"/>
+                <constraint firstItem="QUh-tD-yda" firstAttribute="leading" secondItem="P6a-Pd-9YF" secondAttribute="trailing" constant="9" id="KAU-Qe-ipH"/>
+                <constraint firstItem="3Et-RQ-yRj" firstAttribute="top" secondItem="P6a-Pd-9YF" secondAttribute="bottom" constant="2" id="L7f-Gp-GdW"/>
+                <constraint firstItem="V2p-dt-seT" firstAttribute="leading" secondItem="szv-94-IpM" secondAttribute="trailing" id="LRt-q7-1w4"/>
+                <constraint firstItem="mRR-sE-MLf" firstAttribute="centerX" secondItem="szv-94-IpM" secondAttribute="centerX" id="UQs-2W-aNs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="V2p-dt-seT" secondAttribute="bottom" id="VuA-AE-3Cc"/>
+                <constraint firstItem="QUh-tD-yda" firstAttribute="baseline" secondItem="P6a-Pd-9YF" secondAttribute="baseline" id="WpW-cf-c9n"/>
+                <constraint firstItem="V2p-dt-seT" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="e62-1o-xpf"/>
+                <constraint firstItem="P6a-Pd-9YF" firstAttribute="leading" secondItem="V2p-dt-seT" secondAttribute="trailing" id="ecr-SK-c8l"/>
+                <constraint firstItem="3Et-RQ-yRj" firstAttribute="leading" secondItem="P6a-Pd-9YF" secondAttribute="leading" id="iwD-8O-sqT"/>
+                <constraint firstItem="WqI-tC-TDZ" firstAttribute="leading" secondItem="3Et-RQ-yRj" secondAttribute="leading" constant="-4" id="lTj-ar-b6Z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3uE-jF-6rL" secondAttribute="bottom" id="llR-qq-Wfx"/>
+                <constraint firstItem="V2p-dt-seT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.05" id="rYS-Dh-6ZT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-1538" y="-1915"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alarmIcon" width="50" height="37"/>
+        <image name="yellowLamp" width="40" height="20"/>
+    </resources>
+</document>
