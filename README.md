@@ -10,9 +10,9 @@
    
 
 
-以简洁高效为目的的计划神器 ⬇️
+以简洁高效为目的的计划神器 
 ----
-A plan artifact for the purpose of simplicity and efficiency⬇️
+A plan artifact for the purpose of simplicity and efficiency
 
 <img src=https://github.com/FinchFeng/MyPlanList/blob/master/Group%205.png width="830" height="368" alt="图片加载失败时，显示这段字"/>
 <br>
