@@ -17,7 +17,4 @@ A plan artifact for the purpose of simplicity and efficiency<br>
 <img src=https://github.com/FinchFeng/MyPlanList/blob/master/Group%207.png width="830" height="368" alt="图片加载失败时，显示这段字"/>
 
     Swift 4  ☑️
-    iOS 11  ☑️
-    App Store ☑️
-
-[![appStore](https://github.com/FinchFeng/MyPlanList/blob/master/Download_on_the_App_Store_Badge_CN_135x40.png)](https://itunes.apple.com/cn/app/计划单/id1341198801?mt=8)
+    iOS 12  ☑️
